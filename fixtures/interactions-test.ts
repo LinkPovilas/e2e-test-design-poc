@@ -6,7 +6,6 @@ import { RemoveFromCart } from "../activities/interactions/remove-from-cart";
 
 interface Interaction {
   navigate: Navigate;
-  login: Login;
   addToCart: AddToCart;
   removeFromCart: RemoveFromCart;
 }
@@ -15,9 +14,7 @@ const test = base.extend<Interaction>({
   navigate: async ({ page }, use) => {
     await use(new Navigate(page));
   },
-  login: async ({ loginForm }, use) => {
-    await use(new Login(loginForm));
-  },
+
   addToCart: async ({ inventoryItem }, use) => {
     await use(new AddToCart(inventoryItem));
   },
