@@ -1,0 +1,14 @@
+{
+  "name": "swag-labs-uat",
+  "version": "1.0.0",
+  "description": "Swag Labs User Acceptance Tests",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Povilas Linkevicius",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.44.0",
+    "@types/node": "^20.12.11"
+  }
+}
