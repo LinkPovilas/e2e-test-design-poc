@@ -1,4 +1,4 @@
-# Swag Labs User Acceptance Tests
+# End-to-End test design POC
 
 🎭 Playwright project example, heavily inspired by the Screenplay design pattern.
 
