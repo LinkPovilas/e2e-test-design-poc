@@ -1,13 +1,13 @@
-import { ItemName } from "../questions/item-name";
-import { ItemsInCart } from "../questions/items-in-cart";
+import { ItemName } from "../page-queries/item-name";
+import { ItemsInCart } from "../page-queries/items-in-cart";
 import { test as base } from "./page-objects-test";
 
-interface Question {
+interface PageQuery {
   itemName: ItemName;
   itemsInCart: ItemsInCart;
 }
 
-export const test = base.extend<Question>({
+export const test = base.extend<PageQuery>({
   itemName: async ({ inventoryItem }, use) => {
     await use(new ItemName(inventoryItem));
   },

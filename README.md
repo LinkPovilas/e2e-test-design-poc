@@ -6,20 +6,20 @@
 
 ```Shell
 .
-├── activities # Steps of a business workflow in your domain
-├── data       # Test data
-├── decorators # TypeScript decorators
-├── fixtures   # Dependency injection and state handling
-├── pages      # Lean page objects
-├── questions  # Methods to retrieve information about the application under test
-└── tests      # Test cases
+├── data         # Test data
+├── decorators   # TypeScript decorators
+├── fixtures     # Dependency injection and state handling
+├── page-actions # Steps of a business workflow in your domain
+├── page-objects # Lean page objects
+├── page-queries # Methods to retrieve information about the application under test
+└── tests        # Test cases
 ```
 
 ## Building blocks of a test scenario
 
 ![](./docs/diagram.webp)
 
-- **Questions** should return values.
+- **Page queries** should return values.
 - **Interactions** should not return values.
 - **Tasks** are composed of multiple interactions and/or tasks. Should never return values.
 

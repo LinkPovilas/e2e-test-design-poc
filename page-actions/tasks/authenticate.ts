@@ -1,6 +1,6 @@
 import { step } from "../../decorators/step";
 import { Actionable } from "../../utility-types/actionable";
-import type { Login, User } from "./login";
+import type { Login, User } from "../interactions/login";
 import type { Navigate } from "../interactions/navigate";
 
 export class Authenticate implements Actionable<Authenticate> {
