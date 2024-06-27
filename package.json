@@ -1,6 +1,9 @@
 {
   "name": "e2e-test-design-poc",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "description": "End-to-End test design POC",
   "main": "index.js",
   "scripts": {},
@@ -8,7 +11,7 @@
   "author": "Povilas Linkevicius",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.44.0",
+    "@playwright/test": "^1.45.0",
     "@types/node": "^20.12.11"
   }
 }
