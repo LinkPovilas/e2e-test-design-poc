@@ -4,6 +4,7 @@ export class InventoryItem extends PageObject {
   get widget() {
     return this.page.getByTestId("inventory-item");
   }
+
   get name() {
     return this.page.getByTestId("inventory-item-name");
   }
