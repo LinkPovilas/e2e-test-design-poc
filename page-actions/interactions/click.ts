@@ -6,7 +6,7 @@ export class Click implements Actionable<Click> {
   constructor(private readonly loginForm: LoginForm) {}
 
   @step
-  async login() {
+  async loginButton() {
     await this.loginForm.loginButton.click();
   }
 }

@@ -9,7 +9,7 @@ it.describe("Authentication", () => {
   });
 
   it("should require username", async ({ click, loginError }) => {
-    await click.login();
+    await click.loginButton();
     await expect(loginError.message).toHaveText(
       uiErrorMessage.usernameIsRequired
     );
@@ -17,7 +17,7 @@ it.describe("Authentication", () => {
 
   it("should require password", async ({ enter, click, loginError }) => {
     await enter.username(user.standard.username);
-    await click.login();
+    await click.loginButton();
     await expect(loginError.message).toHaveText(
       uiErrorMessage.passwordIsRequired
     );

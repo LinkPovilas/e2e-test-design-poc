@@ -15,6 +15,6 @@ export class Login implements Actionable<Login> {
   async as({ username, password }: User) {
     await this.enter.username(username);
     await this.enter.password(password);
-    await this.click.login();
+    await this.click.loginButton();
   }
 }
